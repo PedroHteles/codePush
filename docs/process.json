@@ -1,0 +1,16 @@
+{
+    "apps": [
+        {
+            "name": "code-push-server",
+            "max_memory_restart": "300M",
+            "script": "D:/develop/projetos/code-push-server/bin/www",
+            "instances": "max",
+            "exec_mode": "cluster",
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": 3000,
+                "CONFIG_FILE": "D:/develop/projetos/code-push-server/config/config.js"
+            }
+        }
+    ]
+}
